@@ -9,3 +9,5 @@ python export.py --device cpu --weights './yolov9-m.pt' --include onnx
 2, 在yolov9项目当中，下载好模型，并测试(这里测试的是 yolov9-m.pt)
 python detect_dual.py --source './data/images/2.jpeg' --img 640 --device cpu --weights './yolov9-m.pt' --name yolov9_c_640_detect
 
+3，xxx.py脚本说明
+  -- success_onnx_nms.py  onnx模型在pytorch上运行
