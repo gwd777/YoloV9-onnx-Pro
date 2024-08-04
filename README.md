@@ -10,4 +10,7 @@ python export.py --device cpu --weights './yolov9-m.pt' --include onnx
 python detect_dual.py --source './data/images/2.jpeg' --img 640 --device cpu --weights './yolov9-m.pt' --name yolov9_c_640_detect
 
 3，xxx.py脚本说明
-  -- success_onnx_nms.py  onnx模型在pytorch上运行
+
+  -- success_onnx_nms.py      # onnx模型在pytorch，GPU上运行
+  -- success_onnx_nms_cpu.py    # onnx模型在numpy CPU上运行
+  -- xr_yolov9_detection.py     # 可以实时接收摄像头设备的图像，进行物体检测
